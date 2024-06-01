@@ -12,7 +12,10 @@ class CounterBlocPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
-        title: Text('My Counter Cubit'),
+        title: Text('My Counter Cubit',
+            style: TextStyle(
+              color: Theme.of(context).indicatorColor,
+            )),
       ),
       body: BlocBuilder<CounterBloc, int>(
         builder: (context, state) {

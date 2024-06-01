@@ -17,6 +17,7 @@ class MyApp1 extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
         primaryColor: Colors.deepOrange,
+        indicatorColor: Colors.white,
       ),
       routes: {
         "/": (context) => CounterPage(),
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.deepOrange,
           primaryColor: Colors.deepOrange,
+          indicatorColor: Colors.white,
         ),
         routes: {
           "/": (context) => CounterBlocPage(),
