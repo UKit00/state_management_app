@@ -7,10 +7,14 @@ class CounterBloc extends Bloc<CountEvent, int> {
     on<CountEvent>((event, emit) {
       switch (event) {
         case CountEvent.DECREMENT:
-          emit(state - 1);
+          if (state > 0) {
+            emit(state - 1);
+          }
           break;
         case CountEvent.INCREMENT:
-          emit(state + 1);
+          if (state < 10) {
+            emit(state + 1);
+          }
           break;
       }
     });
